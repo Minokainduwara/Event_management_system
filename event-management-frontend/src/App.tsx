@@ -1,15 +1,16 @@
 import './App.css'
 import './index.css'
+import { Routes, Route } from "react-router";
+import {Login} from "./pages/login.tsx";
+
 function App() {
 
   return (
-    <>
-      <div className="flex items-center justify-center h-screen bg-black">
-        <h1 className="text-5xl font-bold text-green-400">
-          Tailwind is working 🚀
-        </h1>
+      <div className="p-4">
+          <Routes>
+              <Route path="/login" element={<Login />} />
+          </Routes>
       </div>
-    </>
   )
 }
 
