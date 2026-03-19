@@ -113,48 +113,7 @@ export function Login() {
                         </button>
                     </div>
 
-                    {/* Demo Login Options */}
-                    <div className="mt-8 pt-6 border-t border-gray-200">
-                        <p className="text-xs text-center text-gray-500 mb-3">Quick Demo Login</p>
-                        <div className="grid grid-cols-3 gap-2">
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    localStorage.setItem('userRole', 'student');
-                                    localStorage.setItem('userId', '3');
-                                    localStorage.setItem('userName', 'John Smith');
-                                    navigate('/');
-                                }}
-                                className="text-xs py-2 px-3 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
-                            >
-                                Student
-                            </button>
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    localStorage.setItem('userRole', 'faculty');
-                                    localStorage.setItem('userId', '2');
-                                    localStorage.setItem('userName', 'Dr. Sarah Johnson');
-                                    navigate('/');
-                                }}
-                                className="text-xs py-2 px-3 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
-                            >
-                                Faculty
-                            </button>
-                            <button
-                                type="button"
-                                onClick={() => {
-                                    localStorage.setItem('userRole', 'admin');
-                                    localStorage.setItem('userId', '1');
-                                    localStorage.setItem('userName', 'Admin User');
-                                    navigate('/');
-                                }}
-                                className="text-xs py-2 px-3 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
-                            >
-                                Admin
-                            </button>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
